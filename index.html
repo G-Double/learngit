@@ -18,7 +18,7 @@
 
      var $doc = $(document),
           $win = $(window),
-          $svg = $('svg').drawsvg(),
+          $svg = $('svg').drawsvg( ),
           max = $doc.height() - $win.height();
 
           
@@ -26,7 +26,6 @@
                var p = $win.scrollTop() / max;
                $svg.drawsvg('progress', p);
           });
-
      </script>
 </body>
 </html>

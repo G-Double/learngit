@@ -97,8 +97,7 @@
             duration: _this.totalDuration,
             step: function(now, fx) {
               _this.progress.call(_this, now / fx.end);
-            },
-            
+            }, 
             complete: function() {
               _this.options.callback.call(this);
 
